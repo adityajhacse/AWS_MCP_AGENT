@@ -56,6 +56,8 @@ docker build -t "$REPO_NAME" ./Embark-agent/aws-mcp
 docker tag "$REPO_NAME:latest" \
   "$AWS_ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com/$REPO_NAME:latest"
 docker push "$AWS_ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com/$REPO_NAME:latest"
+
+Note : Docker setup is comatible with cpu_architecture = "ARM64"
 ```
 
 ## Manage secrets with AWS Secrets Manager (no hardcoded secrets)
